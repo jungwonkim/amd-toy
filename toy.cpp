@@ -12,6 +12,7 @@ int main(int argc, char** argv) {
 
   hipError_t err;
 
+  printf("[%s:%d] err[%d] means SUCCESS\n", __FILE__, __LINE__, hipSuccess);
   err = hipInit(0);
   printf("[%s:%d] err[%d]\n", __FILE__, __LINE__, err);
   err = hipGetDeviceCount(&ndevs);
